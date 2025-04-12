@@ -4,7 +4,6 @@
 
 1) Non-pipelined calculator
 
-
 TL-verilog code:-
     $op[1:0] = $rand1[1:0];
     $val1[31:0] = >>2$out;
@@ -18,13 +17,12 @@ TL-verilog code:-
 <img width="409" alt="image" src="https://github.com/user-attachments/assets/c3e27bc6-e506-449b-8f8e-f5f012e80fdf" />
 
 2) Pipelined calculator with a valid signal
+   
 TL-verilog code:-
-
 
    |calc
       @0
          $reset = *reset;
-
       ?$valid   
          @1
             $cnt = $reset ? 0 : (1 + >>1$cnt);
