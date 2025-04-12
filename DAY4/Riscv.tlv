@@ -134,22 +134,6 @@
          
       @2
          
-         $rf_rd_en1 = $rs1_valid ;
-         
-         ?$funct3_or_rs1_valid
-            $rf_rd_index1[4:0] = $rs1 ;
-            
-         $src1_value[31:0] = (>>1$rf_wr_en && (>>1$rd == $rs1)) ? >>1$result : $rf_rd_data1 ; //output 1
-         
-         $rf_rd_en2 = $rs2_valid ;
-         
-         ?$rs2_valid
-         $rf_rd_index2[4:0] = $rs2 ;
-            
-         $src2_value[31:0] = (>>1$rf_wr_en && (>>1$rd == $rs2)) ? >>1$result : $rf_rd_data2 ; //output 2
-         
-         $br_tgt_pc[31:0] = $pc + $imm ;  
-
 
       // Note: Because of the magic we are using for visualisation, if visualisation is enabled below,
       //       be sure to avoid having unassigned signals (which you might be using for random inputs)
