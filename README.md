@@ -3,6 +3,8 @@
 "Started with Implementing a TL Verilog in Makerchip"
 
 1) Non-pipelined calculator
+
+
 TL-verilog code:-
     $op[1:0] = $rand1[1:0];
     $val1[31:0] = >>2$out;
@@ -17,6 +19,8 @@ TL-verilog code:-
 
 2) Pipelined calculator with a valid signal
 TL-verilog code:-
+
+
    |calc
       @0
          $reset = *reset;
