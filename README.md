@@ -1,6 +1,6 @@
 # RISC-V-MYTH-W
 
-"Started with Implementing a TL Verilog in Makerchip"
+"Started with Implementing a TL-Verilog in Makerchip"
 
 1) Non-pipelined calculator
 
