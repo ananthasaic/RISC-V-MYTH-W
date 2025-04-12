@@ -89,14 +89,6 @@
          $is_jal   = $dec_bits ==? 11'bx_xxx_1101111;
          $is_jalr  = $dec_bits ==? 11'bx_000_1100111;
          
-         //Branching
-         $is_beq   = $dec_bits ==? 11'bx_000_1100011;
-         $is_bne   = $dec_bits ==? 11'bx_001_1100011;
-         $is_blt   = $dec_bits ==? 11'bx_100_1100011;
-         $is_bge   = $dec_bits ==? 11'bx_101_1100011;
-         $is_bltu  = $dec_bits ==? 11'bx_110_1100011;
-         $is_bgeu  = $dec_bits ==? 11'bx_111_1100011;
-         
          //Load
          $is_lb    = $dec_bits ==? 11'bx_000_0000011;
          $is_lh    = $dec_bits ==? 11'bx_001_0000011;
@@ -107,7 +99,15 @@
          //Store
          $is_sb    = $dec_bits ==? 11'bx_000_0100011;
          $is_sh    = $dec_bits ==? 11'bx_001_0100011;
-         $is_sw    = $dec_bits ==? 11'bx_010_0100011;
+         $is_sw    = $dec_bits ==? 11'bx_010_0100011;         
+         
+         //Branching
+         $is_beq   = $dec_bits ==? 11'bx_000_1100011;
+         $is_bne   = $dec_bits ==? 11'bx_001_1100011;
+         $is_blt   = $dec_bits ==? 11'bx_100_1100011;
+         $is_bge   = $dec_bits ==? 11'bx_101_1100011;
+         $is_bltu  = $dec_bits ==? 11'bx_110_1100011;
+         $is_bgeu  = $dec_bits ==? 11'bx_111_1100011;
          
          $is_addi  = $dec_bits ==? 11'bx_000_0010011;
          $is_slti  = $dec_bits ==? 11'bx_010_0010011;
@@ -134,6 +134,10 @@
          
       @2
          
+
+
+      // YOUR CODE HERE
+      // ...
 
       // Note: Because of the magic we are using for visualisation, if visualisation is enabled below,
       //       be sure to avoid having unassigned signals (which you might be using for random inputs)
